@@ -1,0 +1,648 @@
+{
+	"info": {
+		"_postman_id": "6cdd4e03-3cfa-417e-bdd4-d00f0f2fa2b4",
+		"name": "prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22814070"
+	},
+	"item": [
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "clienteGet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clientecreate1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"nombre\":\"Jose Lema\",\r\n    \"genero\":\"M\",\r\n    \"edad\":30,\r\n    \"identificacion\":\"17120518455\",\r\n    \"direccion\":\"Otavalo sn y principal\",\r\n    \"telefono\":\"098254785\",\r\n\t\"contrasena\":\"XXXX\",\r\n    \"estado\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clientecreate2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"nombre\":\"Marianela Montalvo\",\r\n    \"genero\":\"F\",\r\n    \"edad\":32,\r\n    \"identificacion\":\"17120518452\",\r\n    \"direccion\":\"Amazonas y NNUU\",\r\n    \"telefono\":\"097549865\",\r\n    \"contrasena\":\"XXXX\",\r\n    \"estado\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clientecreate3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":3,\r\n    \"nombre\":\"Juan Osorio\",\r\n    \"genero\":\"M\",\r\n    \"edad\":32,\r\n    \"identificacion\":\"1000518452\",\r\n    \"direccion\":\"13 de junio y equinoccional\",\r\n    \"telefono\":\"098874587\",\r\n    \"contrasena\":\"XXXX\",\r\n    \"estado\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clientecreate4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"nombre\":\"Juan Osorio update\",\r\n    \"genero\":\"M\",\r\n    \"edad\":33,\r\n    \"identificacion\":\"1000518452\",\r\n    \"direccion\":\"13 de junio y equinoccional\",\r\n    \"telefono\":\"00\",\r\n    \"contrasena\":\"XXXX\",\r\n    \"estado\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cliente4Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"nombre\":\"Juan Osorio update\",\r\n    \"genero\":\"M\",\r\n    \"edad\":49,\r\n    \"identificacion\":\"1000518452\",\r\n    \"direccion\":\"13 de junio y equinoccional\",\r\n    \"telefono\":\"022406987\",\r\n    \"contrasena\":\"XXXX\",\r\n    \"estado\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Clientes/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Clientes",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cliente4Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"nombre\":\"Juan Osorio update\",\r\n    \"genero\":\"M\",\r\n    \"edad\":49,\r\n    \"identificacion\":\"1000518452\",\r\n    \"direccion\":\"13 de junio y equinoccional\",\r\n    \"telefono\":\"022406987\",\r\n    \"contrasena\":\"XXXX\",\r\n    \"estado\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Clientes/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Clientes",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cuentas",
+			"item": [
+				{
+					"name": "cuentasGet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cuentasGet1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"numeroCuenta\":\"478758\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":2000,\r\n    \"estado\":1,\r\n    \"clienteId\":1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cuentasGet2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"numeroCuenta\":\"225487\",\r\n    \"tipoCuenta\":\"Corriente\",\r\n    \"saldoInicial\":100,\r\n    \"estado\":1,\r\n    \"clienteId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cuentasGet3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"numeroCuenta\":\"225487\",\r\n    \"tipoCuenta\":\"Corriente\",\r\n    \"saldoInicial\":100,\r\n    \"estado\":1,\r\n    \"clienteId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cuentasGet4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"numeroCuenta\":\"496825\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":540,\r\n    \"estado\":1,\r\n    \"clienteId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cuentasGet5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":5,\r\n    \"numeroCuenta\":\"585545\",\r\n    \"tipoCuenta\":\"Corriente\",\r\n    \"saldoInicial\":1000,\r\n    \"estado\":1,\r\n    \"clienteId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cuentasUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":5,\r\n    \"numeroCuenta\":\"585545\",\r\n    \"tipoCuenta\":\"Corriente\",\r\n    \"saldoInicial\":1000,\r\n    \"estado\":1,\r\n    \"clienteId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cuentas5Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":5,\r\n    \"numeroCuenta\":\"585545\",\r\n    \"tipoCuenta\":\"Corriente\",\r\n    \"saldoInicial\":1000,\r\n    \"estado\":1,\r\n    \"clienteId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Cuentas/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Cuentas",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "movimientos",
+			"item": [
+				{
+					"name": "movimientosGet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44321/api/Movimientos/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Movimientos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movimientos1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"cuentaId\":1,\r\n\t\"fecha\":\"2022-08-05\",\r\n    \"tipo\":\"Retiro\",\r\n    \"valor\":-575,\r\n    \"saldo\":1425\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Movimientos/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Movimientos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movimientos2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":2,\r\n    \"cuentaId\":2,\r\n\t\"fecha\":\"2022-08-05\",\r\n    \"tipo\":\"Deposito\",\r\n    \"valor\":600,\r\n    \"saldo\":700\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Movimientos/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Movimientos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movimientos3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":3,\r\n    \"cuentaId\":3,\r\n\t\"fecha\":\"2022-08-05\",\r\n    \"tipo\":\"Deposito\",\r\n    \"valor\":150,\r\n    \"saldo\":150\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Movimientos/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Movimientos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movimientos4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":3,\r\n    \"cuentaId\":3,\r\n\t\"fecha\":\"2022-08-05\",\r\n    \"tipo\":\"Deposito\",\r\n    \"valor\":150,\r\n    \"saldo\":150\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Movimientos/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Movimientos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movimientos4update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"cuentaId\":4,\r\n\t\"fecha\":\"2022-08-05\",\r\n    \"tipo\":\"Retiro\",\r\n    \"valor\":540,\r\n    \"saldo\":1080\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Movimientos/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Movimientos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "movimientos4delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":4,\r\n    \"cuentaId\":4,\r\n\t\"fecha\":\"2022-08-05\",\r\n    \"tipo\":\"Retiro\",\r\n    \"valor\":540,\r\n    \"saldo\":1080\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44321/api/Movimientos/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44321",
+							"path": [
+								"api",
+								"Movimientos",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
